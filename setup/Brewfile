@@ -14,7 +14,7 @@ brew "shellcheck"         # シェルスクリプトのlinter
 
 cask "iterm2"             # ターミナルエミュレータ
 cask "visual-studio-code" # コードエディタ
-cask "docker"             # コンテナ仮想化プラットフォーム
+cask "docker-desktop"     # コンテナ仮想化プラットフォーム
 cask "sequel-ace"         # MySQLデータベースGUIクライアント
 cask "slack"              # チームコミュニケーションツール
 cask "zoom"               # ビデオ会議ツール
