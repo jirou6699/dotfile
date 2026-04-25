@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 set -e
 
@@ -28,5 +28,11 @@ for source in "$DOTFILES_DIR"/.??*; do
 
   ln -sf "$source" "$destination"
 done
+
+# Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install brew packages
+cd ${HOME} && brew bundle --file=${HOME}/dotfile/setup/Brewfile
 
 echo "Done! Run 'source ~/.zshrc' to apply changes."

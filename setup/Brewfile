@@ -1,0 +1,29 @@
+brew "git"                # バージョン管理
+brew "fzf"                # ターミナル上のファジーファインダー
+brew "ghq"                # Gitリポジトリを一元管理
+# brew "gh"                 # GitHub操作のCLI（PR作成・Issue管理など）
+brew "neovim"             # テキストエディタ
+brew "zplug"              # zshプラグインマネージャー
+brew "ripgrep"            # 高速grep、neovimとの相性も良い
+brew "zoxide"             # cdの賢い代替
+brew "mas"                # App StoreアプリをCLIでインストール
+brew "shellcheck"         # シェルスクリプトのlinter
+# brew "lazygit"          # Git操作のTUI
+# brew "lazydocker"       # Docker管理のTUI
+# brew "eza"              # lsの代替、色付き・アイコン表示
+
+cask "iterm2"             # ターミナルエミュレータ
+cask "visual-studio-code" # コードエディタ
+cask "docker"             # コンテナ仮想化プラットフォーム
+cask "sequel-ace"         # MySQLデータベースGUIクライアント
+cask "slack"              # チームコミュニケーションツール
+cask "zoom"               # ビデオ会議ツール
+cask "claude"             # AnthropicのAIアシスタント
+cask "google-chrome"      # Googleのウェブブラウザ
+cask "firefox"            # Mozillaのウェブブラウザ
+cask "raycast"            # Spotlight代替
+cask "karabiner-elements" # キーボードカスタマイズ
+cask "appcleaner"         # アプリを関連ファイルごと完全削除
+cask "stats"              # メニューバーにCPU・メモリ使用率を表示
+cask "keka"               # 圧縮・解凍ツール
+cask "aqua-voice"         # 音声入力ツール

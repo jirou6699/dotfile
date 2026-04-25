@@ -114,7 +114,6 @@ bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
 # Git
-eval "$(hub alias -s)"
 alias fixup='git commit --fixup'
 alias autosquash='git rebase -i --autosquash'
 alias branch='git branch'
@@ -184,6 +183,9 @@ alias run='docker compose run --rm app'
 
 # fzf の設定を読み込む
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# zoxide の設定を読み込む
+eval "$(zoxide init zsh)"
 
 # マシン固有の設定を読み込む（最後に読み込むことで他の設定を上書きできる）
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
