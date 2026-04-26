@@ -32,6 +32,12 @@ done
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Remove leftover Docker completion files that can block docker-desktop installation
+BREW_PREFIX="$(brew --prefix)"
+rm -rf "$BREW_PREFIX/share/fish/vendor_completions.d/docker.fish"
+rm -rf "$BREW_PREFIX/share/zsh/site-functions/_docker"
+rm -f  "$BREW_PREFIX/etc/bash_completion.d/docker"
+
 # Install brew packages
 cd ${HOME} && brew bundle --file=${HOME}/dotfile/setup/Brewfile
 
