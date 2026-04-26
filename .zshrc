@@ -6,7 +6,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Zplug（zshプラグインマネージャー）
 # Zplug を読み込む
-source ~/.zplug/init.zsh
+source /usr/local/opt/zplug/init.zsh
 # 非同期処理ライブラリ（pure テーマが必要とする）
 zplug "mafredri/zsh-async", from:github
 # シンプルなプロンプトテーマ
